@@ -24,14 +24,14 @@ main {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 5rem;
 }
-main form {
+
+body > main > form{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-
-  /* font-size: 0.5rem; */
-  height: 2.5rem;
+  padding-top: 2.0rem;
+  height: 3.0rem;
   color: hsl(0, 1%, 44%);
   border-bottom: 0.1rem solid hsl(0, 0%, 86%);
   border-radius: 0.1rem;
@@ -96,7 +96,7 @@ main section {
 }
 
 .result-birth span {
-  font-size: 1rem;
+  font-size: 4.0rem;
   color: var(--primary-color);
 }
 .result-birth h2 {
@@ -132,6 +132,7 @@ form input {
 
 @media (min-width: 870px) {
   form {
+    
     justify-content: flex-start;
     padding-top: 3rem;
     padding-bottom: 4rem;
@@ -167,7 +168,7 @@ form input {
   }
   main {
     width: 80%;
-    height: 50%;
+    height: 70%;
     position: relative;
   }
   form {
@@ -194,7 +195,7 @@ form input {
   .result-birth h2,
   .result-birth span {
     margin-top: 5px;
-    font-size: 1.0rem;
+    font-size:2.0rem;
   }
 }
 
