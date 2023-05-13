@@ -10,8 +10,8 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 94%);
   height: 100vh;
+  background-color: hsl(0, 0%, 94%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +19,6 @@ body {
 
 main {
   background-color: hsl(0, 0%, 100%);
-  height: 80%;
-  width: 85%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -28,22 +26,18 @@ main {
 }
 main form {
   display: flex;
-  margin-left: 1rem;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
-  /* margin-bottom: 1px solid black; */
-  font-size: 0.5rem;
-  height:7rem;
-  color: hsl(0, 1%, 44%);
-}
 
-form {
+  /* font-size: 0.5rem; */
+  height: 2.5rem;
+  color: hsl(0, 1%, 44%);
   border-bottom: 0.1rem solid hsl(0, 0%, 86%);
   border-radius: 0.1rem;
-  /* margin-right: 1rem; */
   position: relative;
-  width: 82.4%;
 }
+
 
 form div {
   display: flex;
@@ -51,7 +45,7 @@ form div {
 }
 
 form input {
-  width: 4rem;
+  width: 3rem;
   border: solid 1px hsl(0, 0%, 86%);
   border-radius: 0.4rem;
   margin-top: 0.2rem;
@@ -166,10 +160,15 @@ form input {
   }
 }
 @media (max-width: 850px) {
-  main {
-    width: 90%;
-    height: 50%;
+  body{
+    width: 100%;
+    height: 100%;
     position: absolute;
+  }
+  main {
+    width: 80%;
+    height: 50%;
+    position: relative;
   }
   form {
     justify-content: center;
@@ -195,6 +194,33 @@ form input {
   .result-birth h2,
   .result-birth span {
     margin-top: 5px;
-    font-size: 4.0rem;
+    font-size: 1.0rem;
+  }
+}
+
+
+@media (max-width: 375px){
+
+
+  form{
+    width: 80%;
+  }
+  form button[type='submit']{
+    width: 1.8rem;
+    height: 1.8rem;
+    top:2rem;
+    left: 2.0rem;
+    justify-self: center;
+    background-size: 1.2rem;
+
+  }
+
+  form label {
+    font-size: .7rem;
+  }
+  form input {
+    width: 4rem;
+    height: 2rem;
+    
   }
 }
